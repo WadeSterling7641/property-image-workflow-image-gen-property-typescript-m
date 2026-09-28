@@ -1,0 +1,25 @@
+{
+  "name": "property-image-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/property_image_service.ts",
+    "start": "tsx src/property_image_service.ts",
+    "sample": "tsx scripts/generate_sample.ts",
+    "test": "tsx --test test/image_policy.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "openai": "^4.80.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
